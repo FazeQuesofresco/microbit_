@@ -1,9 +1,10 @@
 # Imports go at the top
 from microbit import *
+import music
 
 
-# Code in a 'while True:' loop repeats forever
-while True:
-    display.show(Image.HEART)
-    sleep(1000)
-    display.scroll('PEPE')
+# Code in a 'while True:' loop repeats forever 
+
+display.scroll("PEPE",loop=True, delay=60,)
+
+   

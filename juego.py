@@ -1,6 +1,7 @@
 #imports go at the top
 from microbit import*
 import random
+import music
 
 vocales =['A','E','I','O','U']
 consonantes=['B','C','D','F','G','H','J','K','L','M','N','Ñ','P','Q','R','S','T','V','W','X','Y','Z',]
@@ -23,5 +24,12 @@ while total_palabras>0:
         display.show("?")
    
 
-
+ltsNotas =['f4:2','g4:2','e4:2','c4:2','D4:3','D4:2','a4:2','g4:3','f4:3','e4:3','e4:2','e4:2','g4:3','f4:2','e4:2','D4:3','D4:2','F4:2','e4:2','F4:2','e4:2','F4:2','D4:3','D4:2']
 display.scroll("Fin")
+cuenta =30
+while cuenta>0:
+    cuenta=cuenta-1
+    display.scroll(cuenta,delay=30)
+    sleep(1000)
+
+music.play(ltsNotas)

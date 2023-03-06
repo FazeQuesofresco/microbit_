@@ -1,0 +1,11 @@
+# Imports go at the top
+from microbit import *
+import random
+
+imagenes = [Image.HEART_SMALL,Image.ANGRY,Image.SMILE,Image.HEART]
+
+while True:
+    if button_a.was_pressed():
+        imagenes_aleatoria=imagenes[random.randint(0,len(imagenes)-1)]
+        display.show(imagenes_aleatoria)
+        sleep(500)
